@@ -114,9 +114,9 @@ def main():
 
 def interactive_test():
     """
-    互動式測試模式
+    互動式測試模式（支援正負角度）
     """
-    print("🔧 輪盤互動測試模式")
+    print("🔧 輪盤互動測試模式（支援 ±360 度）")
     print("=" * 40)
     
     turntable = SimpleTurntableTest(port)  # 改成你的實際 COM Port
@@ -127,20 +127,20 @@ def interactive_test():
     
     try:
         while True:
-            angle_input = input("\n輸入角度 (0-360) 或 'q' 退出: ")
+            angle_input = input("\n輸入角度 (-360 到 360)，或 'q' 退出: ")
             
             if angle_input.lower() == 'q':
                 break
             
             try:
                 angle = int(angle_input)
-                if 0 <= angle <= 360:
+                if -360 <= angle <= 360:
                     print(f"🔄 旋轉到 {angle}°...")
                     turntable.rotate_test(angle)
                 else:
-                    print("⚠️ 請輸入 0-360 之間的角度")
+                    print("⚠️ 請輸入 -360 到 360 之間的角度")
             except ValueError:
-                print("⚠️ 請輸入有效的數字")
+                print("⚠️ 無效輸入：請輸入整數度數")
     
     except KeyboardInterrupt:
         print("\n⚠️ 用戶中斷")
