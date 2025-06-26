@@ -1,5 +1,11 @@
 import serial
 import time
+import serial.tools.list_ports
+
+ports = serial.tools.list_ports.comports()
+print("可用的 COM 埠：")
+for port in ports:
+    print(port.device)
 
 class HC12Controller:
     def __init__(self, port, baudrate=9600):
