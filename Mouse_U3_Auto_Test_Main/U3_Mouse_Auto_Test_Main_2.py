@@ -18,6 +18,8 @@ from mouse_test_screenshot import capture_with_angle
 from log_util import init_log
 from turntable_controller import TurntableController
 
+pyautogui.FAILSAFE = False  # 關閉滑鼠移到角落的安全機制
+
 # === 初始參數設定 ===
 base_path = os.path.dirname(os.path.abspath(__file__))
 sikuli_open = os.path.join(base_path, "U3_Mouse_Test.sikuli")
