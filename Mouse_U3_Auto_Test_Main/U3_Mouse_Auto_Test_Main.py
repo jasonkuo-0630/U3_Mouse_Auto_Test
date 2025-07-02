@@ -17,6 +17,8 @@ from serial_util import HC12Serial                # HC-12 串口控制模組
 from mouse_test_screenshot import capture_and_save  # 螢幕截圖模組
 from log_util import init_log                     # LOG 紀錄初始化工具
 
+pyautogui.FAILSAFE = False  # 關閉滑鼠移到角落的安全機制
+
 # === 初始參數設定 ===
 base_path = os.path.dirname(os.path.abspath(__file__))  # 目前.py所在資料夾
 sikuli_open = os.path.join(base_path, "U3_Mouse_Test.sikuli")  # Sikuli 測試腳本
