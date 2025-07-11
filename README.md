@@ -115,8 +115,8 @@ Mouse_U3_Auto_Test_Main/
 ```
 
 ### 驅動程式
-- **CP2102 USB 轉串口驅動**: [下載連結](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
-CP210X Driver壓縮檔於跟目錄"Tool"資料夾內
+- **CP2102 USB 轉串口驅動**: CP210X Driver壓縮檔已附在根目錄"Tool"資料夾內
+- [下載連結](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
 
 ## ⚙️ 設定檔說明
 
