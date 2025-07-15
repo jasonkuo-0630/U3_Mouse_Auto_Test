@@ -288,7 +288,7 @@ python U3_Mouse_Auto_Test_Main_turntable.py # 輪盤模式
 1. 檢查 HC-12 串口設定 (COM_PORT)
 2. 確認電池電量充足
 3. 充新插拔 Host 端 HC-12 的 USB-TTL 
-4. 撥動 L 型開關關閉 Arduino 後重啟來重置 HC-12
+4. 撥動 L 型開關 關閉 Arduino 後重啟 重置 Arduino HC-12
 5. 使用 HC12_Debug.py 測試通訊
 ```
 
