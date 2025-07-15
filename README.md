@@ -409,4 +409,4 @@ U3_Mouse_Auto_Test_Main_turntable.py # 輪盤測試主程式
 如有技術問題或建議，請透過 GitHub Issues 聯繫。
 
 ---
-*最後更新: 2025年7月11日*
+*最後更新: 2025年7月15日*
